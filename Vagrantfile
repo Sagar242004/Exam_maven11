@@ -1,5 +1,7 @@
 Vagrant.configure("2") do |config|
 
+  config.vm.box = "ubuntu/jammy64"
+
   # Manager VM
   config.vm.define "manager-vm" do |manager|
     manager.vm.hostname = "manager-vm"
